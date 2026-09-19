@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "741934541433",
+    "project_id": "ruscacepte",
+    "storage_bucket": "ruscacepte.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741934541433:android:d30ffd0ae8e3461bf042a8",
+        "android_client_info": {
+          "package_name": "com.example.ruscacebimde"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiu0vdNUFkKA80a7HFDP-Y0OrOhc7vfeQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
