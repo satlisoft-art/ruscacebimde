@@ -1,4 +1,4 @@
-name: Build Play Store Release AAB
+name: Build Play Store Release AAB with Logo
 
 on:
   push:
@@ -26,6 +26,11 @@ jobs:
 
       - name: Install Dependencies
         run: flutter pub get
+
+      - name: Generate App Icon
+        run: |
+          dart pub global activate flutter_launcher_icons
+          flutter pub run flutter_launcher_icons:main
 
       - name: Build App Bundle (AAB)
         run: flutter build appbundle --release
