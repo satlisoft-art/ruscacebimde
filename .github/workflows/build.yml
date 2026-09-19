@@ -34,13 +34,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: release-aab
-          path: build/app/outputs/bundle/release/app-release.aab
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_launcher_icons: "^0.13.1" # Bu satırı ekle
-
-flutter_launcher_icons:
-  image_path: "logo.png" # Eklediğin görselin adı
-  android: true
-  ios: true
+          path: build/app/outputs/bundle/release/app-release.aa
