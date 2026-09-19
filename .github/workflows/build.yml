@@ -34,4 +34,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: release-aab
-          path: build/app/outputs/bundle/release/app-release.aa
+          path: build/app/outputs/bundle/release/app-release.aab
