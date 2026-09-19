@@ -1,4 +1,4 @@
-name: Build Play Store Release AAB with Logo
+name: Build Play Store Release AAB
 
 on:
   push:
@@ -26,20 +26,6 @@ jobs:
 
       - name: Install Dependencies
         run: flutter pub get
-
-      - name: Add Launcher Icons Dependency
-        run: |
-          echo "dev_dependencies:" >> pubspec.yaml
-          echo "  flutter_launcher_icons: \"^0.13.1\"" >> pubspec.yaml
-          echo "" >> pubspec.yaml
-          echo "flutter_launcher_icons:" >> pubspec.yaml
-          echo "  image_path: \"logo.png\"" >> pubspec.yaml
-          echo "  android: true" >> pubspec.yaml
-          echo "  ios: true" >> pubspec.yaml
-          flutter pub get
-
-      - name: Generate App Icon
-        run: flutter pub run flutter_launcher_icons:main
 
       - name: Build App Bundle (AAB)
         run: flutter build appbundle --release
